@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialConnect</title>
+    <link rel="stylesheet" href="./Feed.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SocialConnect</h1>
+            <div class="nav-icons">
+                <!-- Add New Post Button -->
+                <a href="./CreatePost.html">
+                    <i data-lucide="plus"></i>
+                </a>
+                <a>
+                    <i data-lucide="home"></i>
+                </a>
+                <button>
+                    <i data-lucide="bell"></i>
+                </button>
+                <a href="./Account.html">
+                    <i data-lucide="User"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="create-post">
+            <div class="create-post-header">
+                <img src="https://placehold.co/600x400" alt="Profile">
+                <input 
+                    type="text" 
+                    placeholder="What's on your mind?" 
+                    class="create-post-input"
+                >
+            </div>
+        </div>
+
+
+        <!-- Post From Js -->
+
+      
+    </body>
+ <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./Feed.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Section</title>
+    <link rel="stylesheet" href="./Account.css">
+</head>
+<body>
+
+
+    <div id = "AccountSection">
+        <section>
+            <button>Sign IN</button>
+            <button>Sign Up</button>
+        </section>
+
+        <section id="FormSection">
+            <form id = "SignInForm">
+                <label for="username">UserName::</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign In</button>
+
+            </form>
+
+            <form  id = "SignUpForm">
+                <label for="FullName">Full Name:</label>
+                <input type="text" id="FullName" name="fullName" required>
+
+                <label for="ProfilePic">Prifile Pic:</label>
+                <input type="url" id="ProfilePic" name="ProfilePic" required>
+
+                <label for="username">UserName:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+
+        </section>
+
+
+        <section id = "UserCard"> <!--Will Display Of The User Has Successfully Signind In  -->
+
+            <div id="UserCard">
+                <img id="ProfilePic" src="https://via.placeholder.com/150" alt="Profile Pic">
+                <h2 id="UserName">John Doe</h2>
+                <p id="Email">johndoe@example.com</p>
+                <button id="SignOut">Sign Out</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./Account.js"></script>
+</html>

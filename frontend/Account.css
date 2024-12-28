@@ -1,0 +1,84 @@
+/* Base styles for account section */
+#AccountSection {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Toggle buttons styling */
+#AccountSection > section:first-child {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Initially hide signup form and user card */
+#SignUpForm, #UserCard {
+    display: none;
+}
+
+/* User card styling */
+#UserCard {
+    text-align: center;
+    padding: 20px;
+}
+
+#UserCard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#UserCard h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+#UserCard p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#SignOut {
+    background: #dc3545;
+}
+
+#SignOut:hover {
+    background: #c82333;
+}
